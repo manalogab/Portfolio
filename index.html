@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Manalo — Web Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="GEM Logo"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+    <div class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-orb orb-1"></div>
+    <div class="hero-bg-orb orb-2"></div>
+    <div class="container">
+      <div class="hero-content">
+
+        <!-- Left: Text -->
+        <div class="hero-text">
+          <div class="hero-badge">Available for Internship</div>
+          <h1 class="hero-name">
+            Gabriel Edward<br><span class="highlight">Manalo</span>
+          </h1>
+          <p class="hero-role">Web Developer</p>
+          <p class="hero-tagline">
+            I create responsive web applications and adapt easily to new technologies and environments. Committed to continuous learning, I build clean, user-focused digital experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="projects.html" class="btn btn-primary">View Projects</a>
+            <a href="resume.html" class="btn btn-outline">Download Resume</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="3" data-suffix="+">0+</span>
+              <span class="stat-label">Projects Done</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="5" data-suffix="+">0+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="3" data-suffix="rd">3rd</span>
+              <span class="stat-label">Year Student</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-inner">
+              <!-- Replace with: <img src="images/profile.jpg" alt="Gabriel Manalo"> -->
+              <div class="hero-image-placeholder">GEM</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="featured-projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card fade-in fade-in-delay-1">
+          <div class="project-card-image">
+            <img src="images/ps5 store.jpg" alt="PS5 Store">
+            <div class="project-card-overlay"></div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Web App</span>
+            <span class="project-tag">Backend</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">PS5 Store</h3>
+            <p class="project-card-desc">A fully functional online store with product listings, shopping cart, user authentication, and order management system.</p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">PHP/MySQL</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="http://mygyatstore.onlinewebshop.net/" class="btn btn-primary btn-sm">Live Demo</a>
+              <a href="https://github.com/manalogab/ps5store" class="btn btn-outline btn-sm">GitHub</a>
+              <a href="project1.html" class="btn btn-outline btn-sm">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card fade-in fade-in-delay-2">
+          <div class="project-card-image">
+            <img src="images/dental clinic.jpg" alt="Dental Clinic Website">
+            <div class="project-card-overlay"></div>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Website</span>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-card-title">Dental Clinic Website</h3>
+            <p class="project-card-desc">A dental clinic website featuring service listings, clinic information, online appointment booking, contact details, and patient inquiry support.</p>
+            <div class="project-tech-stack">
+              <span class="tech-tag">Elementor</span>
+              <span class="tech-tag">SEO</span>
+            </div>
+            <div class="project-card-actions">
+              <a href="https://galangdentalcenter.com/" class="btn btn-primary btn-sm">Live Demo</a>
+              <a href="https://galangdentalcenter.com/wp-admin/" class="btn btn-outline btn-sm">WordPress</a>
+              <a href="project2.html" class="btn btn-outline btn-sm">Details</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end projects-grid -->
+
+      <div class="projects-grid-footer fade-in">
+        <a href="projects.html" class="btn btn-outline">View All Projects</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-text">© 2026 <span>Manalo Gabriel Edward</span></p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
