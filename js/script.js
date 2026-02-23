@@ -19,19 +19,33 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  hamburger?.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navLinks?.classList.toggle('open');
-    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+  function openMenu() {
+    hamburger.classList.add('active');
+    navLinks.classList.add('open');
+  }
+
+  function closeMenu() {
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('open');
+  }
+
+  hamburger?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    navLinks.classList.contains('open') ? closeMenu() : openMenu();
   });
 
-  // Close nav on link click
+  // Close on nav link click
   navLinks?.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger?.classList.remove('active');
-      navLinks.classList.remove('open');
-      document.body.style.overflow = '';
-    });
+    link.addEventListener('click', () => closeMenu());
+  });
+
+  // Close when tapping outside the sidebar
+  document.addEventListener('click', (e) => {
+    if (navLinks?.classList.contains('open') &&
+        !navLinks.contains(e.target) &&
+        !hamburger.contains(e.target)) {
+      closeMenu();
+    }
   });
 
   // Mark active nav link
