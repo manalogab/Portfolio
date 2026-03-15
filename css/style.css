@@ -49,11 +49,76 @@ body.light-theme::before {
     linear-gradient(90deg, rgba(204, 17, 17, 0.05) 1px, transparent 1px);
 }
 
-body.light-theme .navbar { background: rgba(245, 240, 240, 0.92); }
+body.light-theme .navbar { background: rgba(245, 240, 240, 0.95); }
 body.light-theme footer { background: rgba(235, 225, 225, 0.8); }
-body.light-theme .footer-text,
-body.light-theme .footer-links a { color: #666; }
-body.light-theme .nav-links a { color: #666; }
+body.light-theme .footer-text { color: #333; }
+body.light-theme .footer-text span { color: var(--accent-red); }
+body.light-theme .footer-links a { color: #555; }
+body.light-theme .nav-links a { color: #444; }
+body.light-theme .nav-logo { filter: none; }
+
+/* Hero text */
+body.light-theme .hero-role { color: #666; }
+body.light-theme .hero-tagline { color: #444; }
+body.light-theme .hero-tagline strong { color: #111; }
+body.light-theme .stat-label { color: #666; }
+body.light-theme .hero-badge { color: var(--accent-red); background: rgba(204,17,17,0.08); }
+
+/* Section labels and titles */
+body.light-theme .section-label { color: var(--accent-red); }
+body.light-theme .section-title { color: #111; }
+body.light-theme .page-hero-label { color: var(--accent-red); }
+body.light-theme .page-hero-title { color: #111; }
+
+/* Cards */
+body.light-theme .project-card-title { color: #111; }
+body.light-theme .project-card-desc { color: #555; }
+body.light-theme .cert-title { color: #111; }
+body.light-theme .cert-org { color: var(--accent-red); }
+body.light-theme .cert-date { color: #777; }
+
+/* About page */
+body.light-theme .about-text-content h2 { color: #111; }
+body.light-theme .about-text-content p { color: #444; }
+body.light-theme .highlight-item span { color: #444; }
+
+/* Skills */
+body.light-theme .skill-name { color: #222; }
+body.light-theme .skill-bar { background: rgba(0,0,0,0.08); }
+
+/* Resume page */
+body.light-theme .resume-name-block h2 { color: #111; }
+body.light-theme .resume-name-block p { color: var(--accent-red); }
+body.light-theme .resume-contact-info { color: #555; }
+body.light-theme .resume-section-title { color: var(--accent-red); border-color: rgba(204,17,17,0.2); }
+body.light-theme .resume-item-title { color: #111; }
+body.light-theme .resume-item-date { color: #777; }
+body.light-theme .resume-item-org { color: var(--accent-red); }
+body.light-theme .resume-item p { color: #555; }
+body.light-theme .resume-content > p { color: #555; }
+
+/* Contact page */
+body.light-theme .contact-info h2 { color: #111; }
+body.light-theme .contact-info p { color: #444; }
+body.light-theme .contact-detail-label { color: #888; }
+body.light-theme .contact-detail-value { color: #222; }
+body.light-theme .form-label { color: #666; }
+body.light-theme .form-input::placeholder,
+body.light-theme .form-textarea::placeholder { color: #aaa; }
+
+/* Filter buttons */
+body.light-theme .filter-btn { color: #666; border-color: rgba(0,0,0,0.15); }
+body.light-theme .filter-btn:hover,
+body.light-theme .filter-btn.active { color: #111; background: rgba(204,17,17,0.08); border-color: var(--accent-red); }
+
+/* Hamburger */
+body.light-theme .hamburger span { background: #333; }
+
+/* Mobile nav */
+body.light-theme .nav-links { background: #f5f0f0; }
+
+/* Page hero label */
+body.light-theme .section-label { color: var(--accent-red); }
 
 body.light-theme .project-card,
 body.light-theme .cert-card,
