@@ -24,6 +24,98 @@
   --radius: 0px;
 }
 
+/* ===========================
+   LIGHT THEME
+   =========================== */
+body.light-theme {
+  --bg-primary: #f5f5f5;
+  --bg-secondary: #ebebeb;
+  --bg-card: rgba(255, 248, 248, 0.95);
+  --text-primary: #111111;
+  --text-secondary: #444444;
+  --text-muted: #888888;
+  --border: rgba(0, 0, 0, 0.1);
+  --border-red: rgba(204, 17, 17, 0.25);
+  --glow-red: 0 0 20px rgba(204, 17, 17, 0.2), 0 0 50px rgba(204, 17, 17, 0.08);
+  background-image:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(204, 17, 17, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(180, 10, 10, 0.06) 0%, transparent 55%),
+    linear-gradient(160deg, #fff0f0 0%, #f5f5f5 40%, #efefef 100%);
+}
+
+body.light-theme::before {
+  background-image:
+    linear-gradient(rgba(204, 17, 17, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(204, 17, 17, 0.05) 1px, transparent 1px);
+}
+
+body.light-theme .navbar { background: rgba(245, 240, 240, 0.92); }
+body.light-theme footer { background: rgba(235, 225, 225, 0.8); }
+body.light-theme .footer-text,
+body.light-theme .footer-links a { color: #666; }
+body.light-theme .nav-links a { color: #666; }
+
+body.light-theme .project-card,
+body.light-theme .cert-card,
+body.light-theme .contact-form,
+body.light-theme .resume-preview {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+body.light-theme .skills-section { background: rgba(230, 220, 220, 0.3); }
+
+body.light-theme .form-input,
+body.light-theme .form-textarea {
+  background: #ffffff;
+  color: #111111;
+  border-color: rgba(0,0,0,0.15);
+}
+
+body.light-theme .tech-tag {
+  background: rgba(0,0,0,0.06);
+  border-color: rgba(0,0,0,0.12);
+  color: #444;
+}
+
+body.light-theme .hero-image-placeholder { background: linear-gradient(135deg, #ffe8e8, #ffd0d0); }
+body.light-theme .project-card-image { background: linear-gradient(135deg, #ffe8e8, #ffd0d0); }
+
+/* ===========================
+   THEME TOGGLE BUTTON
+   =========================== */
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  border: 1px solid var(--border-red);
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+  background: rgba(204, 17, 17, 0.08);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+body.light-theme .theme-toggle .icon-sun { display: block; }
+body.light-theme .theme-toggle .icon-moon { display: none; }
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
