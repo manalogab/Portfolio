@@ -311,6 +311,29 @@ section {
   width: 100%;
 }
 
+.hero-content-centered {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: unset;
+}
+
+.hero-content-centered .hero-text {
+  max-width: 700px;
+  text-align: center;
+}
+
+.hero-content-centered .hero-stats {
+  justify-content: center;
+}
+
+.hero-content-centered .hero-buttons {
+  justify-content: center;
+}
+
+.hero-content-centered .hero-badge {
+  display: inline-flex;
+}
+
 .hero-badge {
   display: inline-flex;
   align-items: center;
