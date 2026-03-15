@@ -318,8 +318,9 @@ section {
 }
 
 .hero-content-centered .hero-text {
-  max-width: 700px;
+  max-width: 900px;
   text-align: center;
+  width: 100%;
 }
 
 .hero-content-centered .hero-stats {
@@ -332,6 +333,22 @@ section {
 
 .hero-content-centered .hero-badge {
   display: inline-flex;
+}
+
+.hero-content-centered .hero-name {
+  font-size: clamp(3rem, 8vw, 7rem);
+  white-space: nowrap;
+  letter-spacing: -3px;
+}
+
+.hero-content-centered .hero-tagline {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+.hero-content-centered .hero-role {
+  text-align: center;
 }
 
 .hero-badge {
