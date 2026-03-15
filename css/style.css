@@ -117,8 +117,7 @@ body.light-theme .hamburger span { background: #333; }
 /* Mobile nav */
 body.light-theme .nav-links { background: #f5f0f0; }
 
-/* Page hero label */
-body.light-theme .section-label { color: var(--accent-red); }
+body.light-theme .hero-name { color: #111; }
 
 body.light-theme .project-card,
 body.light-theme .cert-card,
