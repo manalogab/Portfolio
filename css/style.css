@@ -1140,8 +1140,15 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
   flex-shrink: 0;
+  color: var(--accent-red);
+}
+
+.contact-detail-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--accent-red);
+  fill: none;
 }
 
 .contact-detail-label {
